@@ -7,5 +7,5 @@ export class AppConstants {
   localStorageKeys = {
     AccessToken: 'ls.accessToken'
   };
-  apiEndpoint = 'http://localhost:4000';
+  apiEndpoint = 'https://localhost:7193';
 }

@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../../Shared/apiservice.service';
 import { Product } from '../../../Models/product.model';
+import { FormsModule } from '@angular/forms';  // Import FormsModule for ngModel
+import { CommonModule } from '@angular/common';  // Import CommonModule for *ngFor, etc.
+
+
 
 @Component({
   selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  templateUrl: './main-page.component.html',
+  styleUrls: ['./main-page.component.css'],
+  standalone: true,
+  imports: [FormsModule, CommonModule]
 })
-export class MainComponent implements OnInit {
+export class MainPageComponent implements OnInit {
   products: Product[] = [];
   totalPages: number = 0;
   totalItems: number = 0;

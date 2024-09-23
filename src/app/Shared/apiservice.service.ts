@@ -21,8 +21,9 @@ export class ApiService {
   }
 
   async GetProducts(page: number = 1, pageSize: number = 10, title: string = '', sortDirection: string = 'asc'): Promise<GetProductResponse> {
-    let url = `${this.appConstants.apiEndpoint}/start?page=${page}&pageSize=${pageSize}&title=${title}&sort=${sortDirection}`;
+    let url = `${this.appConstants.apiEndpoint}/api/product/get-products?page=${page}&pageSize=${pageSize}&title=${title}&sort=${sortDirection}`;
     const data = await this.handleGetRequest(url);
+    console.log(data);
     return data;
   }
 }
