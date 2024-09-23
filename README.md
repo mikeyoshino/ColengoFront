@@ -1,27 +1,48 @@
-# ColengoFront
+# Angular Product Display App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+This is an Angular application that displays a list of demo products with the following features:
+- **Product Image**: A thumbnail image for each product.
+- **Product Title**: The name of the product.
+- **Product Price**: The price of the product.
+- **Pagination**: Displays products in pages with customizable page size.
+- **Sorting**: Sort products by name or created date.
+- **Title Search**: Search for products by their title.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. **Product Listing**:
+   - Each product is displayed with a picture, title, and price.
+   
+2. **Pagination**:
+   - Displays 10 products per page by default, but can be configured.
+   - Navigate between pages using pagination controls.
 
-## Code scaffolding
+3. **Sorting**:
+   - Sort products by title (alphabetically) or by creation date.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. **Search**:
+   - Search products by title using a search bar.
+   
+## Demo
 
-## Build
+The app uses a mock API that serves demo product data for display. It is configured to display 10 products per page, allowing users to sort and search through products.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Screenshot Example
 
-## Running unit tests
+![Product List Screenshot](./screenshot.png) <!-- Add a screenshot here to show a demo -->
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Setup Instructions
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Before running this application, make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14+)
+- [Angular CLI](https://angular.io/cli) (v12+)
+- A Git repository to clone the project.
 
-## Further help
+### Clone the Repository
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Clone the repository to your local machine:
+```bash
+git clone <repository-url>
+cd <repository-folder>
